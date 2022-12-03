@@ -16,7 +16,7 @@ function App() {
   })
   return (
     <div>
-      <Header name="Pokeman Api" />
+      <Header name="Pokemon Api" />
       <div className="select">
         <h1>Your Selected Data is <span>{data}</span></h1>
         <h1>I Select <span>{name}</span></h1>
