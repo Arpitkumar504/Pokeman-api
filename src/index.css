@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Pacifico&family=Poppins:wght@300&display=swap');
+
+:root {
+  --first: 'Pacifico', cursive;
+  --second: 'Poppins', sans-serif;
+  --third: 'Lobster Two', cursive;
+  --lightmodeback: white;
+  --lightmodecolor: #1d1d1d;
+  --footergradiant: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--second);
+}
+
+body {
+  position: relative;
+}
+
+/* Header section */
+.header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1d1d1d;
+  color: #f3f3f3;
+}
+
+h1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.header .icons {
+  font-size: 50px;
+}
+
+/* select section */
+.select {
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.select h1 span {
+  color: red;
+}
+
+.select select {
+  width: 100px;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 20px;
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+/* Footer section */
+.footer {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 8px;
+  font-weight: bold;
+  background-color: #1d1d1d;
+  color: #f3f3f3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media(max-width:576px) {
+  .select {
+    width: 300px;
+  }
+
+  .select h1 {
+    font-size: 20px;
+  }
 }
